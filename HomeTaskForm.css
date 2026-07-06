@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #eef1fb;
+    color: #222;
+    line-height: 1.5;
+}
+
+h3 {
+    text-align: center;
+}
+
+fieldset {
+    border: 2px solid #cdd3e6;
+    padding: 20px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+legend {
+    font-weight: bold;
+    padding: 6px 14px;
+    color: #ffffff;
+    background-color: #764ba2;
+    border-radius: 6px;
+}
+
+label {
+    font-weight: 600;
+    color: #34495e;
+}
+
+input,
+select,
+textarea {
+    padding: 9px 12px;
+    margin: 6px 0 14px 0;
+    border: 2px solid #d8deed;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 400px; 
+    background-color: #fafbff;
+}
+
+textarea {
+    resize: vertical;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    width: 16px;
+    max-width: 16px;
+    height: 16px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    accent-color: #764ba2;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100; 
+    background-color: #764ba2;
+    color: #ffffff;
+    padding: 20px 20px;
+}
+
+.site-header h3 {
+    color: #ffffff;
+}
+
+.page-wrap {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 16px;
+    overflow: visible;
+}
+
+.app-form {
+    display: block; 
+}
+
+.form-row {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-row-radio,
+.form-row-file,
+.form-row-textarea {
+    margin-bottom: 14px;
+}
+
+.inline-options {
+    display: inline-flex; 
+    flex-wrap: wrap;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.option-label {
+    display: inline-block; 
+    font-weight: normal;
+    color: #5b4b8a;
+    cursor: pointer;
+}
+
+.option-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 14px;
+    margin: 4px 8px 4px 0;
+    border-radius: 18px;
+    background-color: #eee8fa;
+}
+
+.skills-list {
+    display: block;
+    margin-top: 8px;
+}
+
+.skill-item {
+    display: inline-flex; 
+}
+
+.section-personal {
+    position: relative; 
+}
+
+
+.badge {
+    position: fixed; 
+    bottom: 20px;
+    right: 20px;
+    background-color: #ee5253;
+    color: #ffffff;
+    padding: 12px 18px;
+    border-radius: 24px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    z-index: 200; 
+}
+
+
+.form-actions {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block; 
+    padding: 11px 28px;
+    margin: 0 8px;
+    border: none;
+    border-radius: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-submit {
+    background-color: #b864b5;
+    color: #ffffff;
+}
+
+.btn-reset {
+    background-color: #576e9d;
+    color: white;
+}
+
+
+.site-footer {
+    text-align: center;
+    padding: 18px;
+    color: #555;
+    font-size: 0.85rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+.btn:focus {
+    outline: 2px solid #764ba2;
+    outline-offset: 2px;
+}
+
