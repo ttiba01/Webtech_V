@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Technology Workshop Registration</title>
+    <link rel="stylesheet" href="FormValidation.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h4 align="center">National Technology Workshop Registration</h4>
+
+        <form id="Form">
+
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="Enter your first name">
+            <small id="firstNameError" class="error"></small>
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="Enter your last name">
+            <small id="lastNameError" class="error"></small>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="example@gmail.com">
+            <small id="emailError" class="error"></small>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password">
+            <small id="passwordError" class="error"></small>
+
+            <label>Gender</label>
+
+            <div class="radio-group">
+
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
+
+            </div>
+
+            <small id="genderError" class="error"></small>
+
+            <label>Interests</label>
+
+            <div class="checkbox-group">
+
+                <input type="checkbox" id="web" name="interest" value="Web Development">
+                <label for="web">Web Development</label>
+
+                <input type="checkbox" id="ai" name="interest" value="AI/ML">
+                <label for="ai">AI/ML</label>
+
+                <input type="checkbox" id="security" name="interest" value="Cyber Security">
+                <label for="security">Cyber Security</label>
+
+                <input type="checkbox" id="cloud" name="interest" value="Cloud Computing">
+                <label for="cloud">Cloud Computing</label>
+
+            </div>
+
+            <small id="interestError" class="error"></small>
+
+            <label for="department">Department</label>
+
+            <select id="department">
+                <option value="">-- Select Department --</option>
+                <option value="CSE">CSE</option>
+                <option value="EEE">EEE</option>
+                <option value="BBA">BBA</option>
+                <option value="English">English</option>
+            </select>
+
+            <small id="departmentError" class="error"></small>
+
+            <label for="about">About Yourself</label>
+
+            <textarea id="about" rows="4"
+                placeholder="Write a few lines about yourself"></textarea>
+
+            <small id="aboutError" class="error"></small>
+
+            <button type="submit">Register</button>
+
+            <p id="successMsg" class="success"></p>
+
+        </form>
+
+    </div>
+
+    <script src="FormValidation.js"></script>
+
+</body>
+
+</html>
